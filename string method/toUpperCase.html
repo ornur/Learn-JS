@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="slc"></p>
+        <button id="but" onclick="ok()"> Change</button>
+        <script>
+            let text='nurdaulet programmer';
+            document.getElementById('slc').innerHTML=text;
+            function ok(){
+                document.getElementById('slc').innerHTML=text.toUpperCase(); //all letters written with caps lock
+            }
+        </script>
+    </body>
+</html>

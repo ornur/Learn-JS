@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body
+        <p id="slc">Hello My Name is Nurdaulet</p>
+        <button id="but" onclick="ok()"> Change</button>
+        <script>
+            let x=document.getElementById('slc').innerHTML;
+            function ok(){
+                document.getElementById('slc').innerHTML=x.replace('Name','Surname'); //x=x.replace not works
+            }
+            </script>
+    </body>
+</html>

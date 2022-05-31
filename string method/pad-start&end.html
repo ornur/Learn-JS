@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="slc"></p>
+        <button id="but" onclick="ok()"> Change</button>
+        <button onclick="ok1()">Change2</button>
+        <script>
+            let text='nurdaulet';
+            function ok(){
+                document.getElementById('slc').innerHTML=text.padStart(30,"x");
+            }
+            function ok1(){document.getElementById('slc').innerHTML=text.padEnd(30,"x");}
+        </script>
+    </body>
+</html>
