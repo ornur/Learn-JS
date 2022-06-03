@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+        <script>
+            const laptops = [`lenovo`, `asus`, `huawei`, `acer`, `mac`];
+
+            laptops.shift();  //removes first value
+            document.getElementById('arr').innerHTML=laptops;
+
+            laptops.unshift(`apple`);  //adds new value at start
+            document.getElementById('arr1').innerHTML=laptops;
+        </script>
+    </body>
+</html>

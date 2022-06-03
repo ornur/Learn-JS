@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+        <script>
+            const laptops = [`lenovo`, `asus`, `huawei`, `acer`, `mac`];
+            const cars= [`volvo`, `opel`, `toyoto`];
+            const drinks = [`coca-cola`, `pepsi`, `fuse tea`];
+
+            //splice() divides array. It is adds and can removes values from array
+            laptops.splice(1, 0, `msi`); //1st parameter `where`, 2nd parameter `how many removes`
+            document.getElementById('arr').innerHTML =laptops; //RESULT: lenovo,msi,asus,huawei,acer,mac
+
+            //slice() just divides array to new array
+            const imposter = laptops.slice(5);  //can use 2 parameter, where starts and ends
+            document.getElementById('arr1').innerHTML=imposter;
+        </script>
+    </body>
+</html>

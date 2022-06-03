@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p></p>
+        <script>
+            const people = [
+            {name : `Ahmed`, year:2000},
+            {name : `Sara`, year:1999},
+            {name : `Meliodas`, year:2005}
+            ]
+
+            people.sort(function(a,b){return a.year-b.year});
+            show(people);
+
+            function show(array){
+            document.getElementById('arr').innerHTML=
+            array[0].name + ` ` + array[0].year + `<br>` +
+            array[1].name + ` ` + array[1].year + `<br>` +
+            array[2].name + ` ` + array[2].year
+            }
+        </script>
+    </body>
+</html>

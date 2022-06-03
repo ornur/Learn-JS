@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <script>
+            const laptops = [`lenovo`, `asus`, `acer`, `huawei`];
+
+            let list=`<ul>`;
+            laptops.forEach(F1);
+            list += `</ul>`;
+            document.getElementById('arr').innerHTML=list;
+            function F1(value){
+                list += `<li>` + value + `</li>`
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+        <script>
+            const laptops = [`lenovo`, `asus`, `huawei`, `acer`, `mac`];
+            const cars= [`volvo`, `opel`, `toyoto`];
+            const drinks = [`coca-cola`, `pepsi`, `fuse tea`];
+
+            const companies = laptops.concat(cars,drinks); // it is just adding and create new big array
+            document.getElementById('arr').innerHTML=companies.join(` <> `);
+        </script>
+    </body>
+</html>

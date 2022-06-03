@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <script>
+            const laptops =[`lenovo`,`asus`,`mac`,`acer`];
+            let L = laptops.length;
+
+            let list = `Cool Laptop Brends<ul>`;
+            for( let i = 0 ; i < L ; i++){
+                list +=`<li>`+ laptops[i]+`</li>`;   //`+` dont forget this 
+            }
+            list += `</ul>`;
+            document.getElementById('arr').innerHTML = list;
+        </script>
+    </body>
+</html>
