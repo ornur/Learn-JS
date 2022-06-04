@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const create = Array.from('ASJ4GFIUDFID42DSSJSXCXVD1SD-JLCS'); //every symbol is element           
+            const entries = create.entries();
+
+            let text ="";
+            for (let e of entries){
+                text += e + '<br>'
+            }
+
+            document.getElementById('arr').innerHTML=text;
+        </script>
+    </body>
+</html>

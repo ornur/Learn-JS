@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const numbers = [32,43,23,23,23,43,58,76];
+            const sum = numbers.reduce(func); // can add 2nd parameter to give initial value
+            
+            document.getElementById('arr').innerHTML=sum;
+
+            function func(total,value){
+               return total += value
+            }
+        </script>
+    </body>
+</html>

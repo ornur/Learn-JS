@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const numbers = [32,43,23,23,23,,43,58,76];
+            let allUnder50 = numbers.every(func);
+            
+            document.getElementById('arr').innerHTML=allUnder50;
+
+            function func(value){
+                return value < 50
+            }
+        </script>
+    </body>
+</html>

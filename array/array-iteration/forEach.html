@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+                const laptops = ['lenovo', 'asus', 'acer', 'mac'];
+
+                let laptop = '';
+                laptops.forEach(func);
+                document.getElementById('arr').innerHTML=laptop;
+                    //this is help to see elements
+                function func (value){
+                    laptop += value +'<br>';
+                }
+        </script>
+    </body>
+</html>

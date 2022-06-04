@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const create = Array.from('67543900-53'); //every symbol is element           
+            const keys = create.keys();
+
+            let text ="";
+            for (let b of keys){
+                text += b + '<br>'
+            }
+
+            document.getElementById('arr').innerHTML=text;
+        </script>
+    </body>
+</html>

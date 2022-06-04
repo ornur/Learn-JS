@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const numbers = [32,43,23,23,23,,43,58,76];
+            const someOver30 = numbers.some(func);
+            
+            document.getElementById('arr').innerHTML=someOver30;
+
+            function func(value){
+                return value > 30
+            }
+        </script>
+    </body>
+</html>

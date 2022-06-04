@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const laptops = ['lenovo', 'asus', 'acer', 'mac'];
+            const newLaptops = laptops.map(func);
+            
+            document.getElementById('arr').innerHTML=newLaptops;
+
+            function func(value){
+                return value + "<__>"
+            }
+        </script>
+    </body>
+</html>

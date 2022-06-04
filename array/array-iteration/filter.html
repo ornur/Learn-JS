@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="arr"></p>
+        <p id="arr1"></p>
+
+
+        <script>
+            const numbers = [32,43,23,23,23,43,58,76];
+            const check = numbers.filter(func);
+            
+            document.getElementById('arr').innerHTML=check;
+
+            function func(value){
+                return value > 23
+            }
+        </script>
+    </body>
+</html>
