@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="txt"></p>
+
+        <script>
+            const date = new Date();
+            document.getElementById("txt").innerHTML=date.getMonth()+1;     //must with +1 because get right month
+
+            /*
+            If you want get month with names:
+
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            const d = new Date();
+            let month = months[d.getMonth()];
+            
+            */
+
+        </script>
+    </body>
+</html>

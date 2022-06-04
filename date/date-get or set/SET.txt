@@ -1,0 +1,3 @@
+SET is like GET 
+But with SET you can manage the result
+And you can compare the SET with GET
