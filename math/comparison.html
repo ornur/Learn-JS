@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <input id="age"/>
+    <button onclick="func()">Click this</button>
+    <p id = "txt"></p>
+    <script>
+        function func(){
+            let age = document.getElementById('age').value;
+            let human = (age>30) ? "Older generation" : "Younger generation";
+            document.getElementById('txt').innerHTML=human;
+        }
+    </script>
+</html>
