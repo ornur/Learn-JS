@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <body>
+        <p id="txt"></p>
+
+        <script>
+            const laptops = [`lenovo`,`acer`,`mac`,`asus`];
+
+            let text ='';
+            let i = 0;
+            while(i<laptops.length){
+                text += laptops[i]+'<br>'
+                i++
+            }
+            document.getElementById('txt').innerHTML=text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <body>
+        <p id="txt"></p>
+
+        <script>
+            const laptops = [`lenovo`,`acer`,`mac`,`asus`];
+
+            let text ='';
+            for (let x of laptops){
+                text += x + "<br>";
+            }
+            document.getElementById('txt').innerHTML=text;
+        </script>
+    </body>
+</html>
