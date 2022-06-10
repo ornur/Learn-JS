@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CALCULATOR</title></head>
+    <body>
+
+        <input type="text" id="n1" />
+        <input type="text" id="n2" /><br><br>
+        <button onclick="plus()">PLUS</button>
+        <button onclick="minus()">MINUS</button>
+        <button onclick="multiply()">MULTIPLY</button>
+        <button onclick="divide()">DIVIDE</button>
+        <p id="result"></p>
+
+        <script>
+            function plus(n1,n2){
+                var n1 = document.getElementById('n1').value;
+                var n2 = document.getElementById('n2').value;
+                document.getElementById('result').innerHTML=Number(n1)+Number(n2); 
+            }
+            function minus(){
+                var n1 = document.getElementById('n1').value;
+                var n2 = document.getElementById('n2').value;
+                document.getElementById('result').innerHTML=Number(n1)-Number(n2);
+            }
+            function multiply(){
+                var n1 = document.getElementById('n1').value;
+                var n2 = document.getElementById('n2').value;
+                document.getElementById('result').innerHTML=Number(n1)*Number(n2);
+            }
+            function divide(){
+                var n1 = document.getElementById('n1').value;
+                var n2 = document.getElementById('n2').value;
+                document.getElementById('result').innerHTML=Number(n1)/Number(n2);
+             }
+        </script>
+    </body>
+</html>
