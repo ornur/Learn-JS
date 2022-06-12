@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            font-size: 45px;
+            background:black;
+            color: #17D4FE;
+            font-family:Verdana;
+        }
+        .clock{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #17D4FE;
+            font-size: 100px;
+            font-family: Helvetica;
+            letter-spacing: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><center>CLOCK by Nurda</center></h1>
+    <div id="clock" class="clock" onload="show()"></div>
+</body>
+
+<script>
+    function show(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ':' + m + ':' + s;
+        document.getElementById('clock').innerText = time;
+        document.getElementById('clock').textContent = time;
+
+        setTimeout(show, 1001);
+    }
+    show();
+</script>
+</html>
